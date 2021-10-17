@@ -1,0 +1,142 @@
+
+Question1
+
+L'ordinateur a interrogé le DNS pour demander l'addresse IP specifique de la destination avant d'interagir avec l'addresse du serveur.
+
+Question2
+
+-Echo (ping) request  id=0x1356, seq=45/11520, ttl=64 (reply in 626)
+-Echo (ping) reply    id=0x1356, seq=45/11520, ttl=114 (request in 625)
+
+Question3
+
+-Source: d8:9e:f3:02:dc:eb (d8:9e:f3:02:dc:eb)
+-Destination: IETF-VRRP-VRID_03 (00:00:5e:00:01:03)
+
+Question4
+
+Address: IETF-VRRP-VRID_03 (00:00:5e:00:01:03)
+
+Oui ça correspond!
+
+Question5
+
+indique le type de paquet encapsulé dans le champ 
+
+Internet Protocol Version 4, Src: 192.168.102.19 (192.168.102.19), Dst: 8.8.8.8 (8.8.8.8)
+
+Question6
+
+Src: 192.168.102.19 (192.168.102.19), Dst: 8.8.8.8 (8.8.8.8)
+
+Question8
+
+
+
+Non ça correspond pas!
+
+
+Question9
+
+C'est pour montrer le type de protocole utilisé comme ici par exemple c'est ICMP
+
+Question 10
+
+ICMP et VRRP
+
+Question 11
+
+24	12.644091786	d8:9e:f3:02:dc:eb	Broadcast	ARP	42	Who has 192.168.102.20?  Tell 192.168.102.19
+
+25	12.644486491	d8:9e:f3:02:dc:61	d8:9e:f3:02:dc:eb	ARP	60	192.168.102.20 is at d8:9e:f3:02:dc:61
+26	12.644511103	192.168.102.19	192.168.102.20	ICMP	98	Echo (ping) request  id=0x1878, seq=1/256, ttl=64 (reply in 27)
+
+27	12.644856662	192.168.102.20	192.168.102.19	ICMP	98	Echo (ping) reply    id=0x1878, seq=1/256, ttl=64 (request in 26)
+
+-ARP c'est pour identifier l'adresse mac de mon voisin et puis ça commence à communiquer
+-ICMP commence à envoyer et à recevoir les requetes.
+
+Question 12
+
+la commande arp -a nous donne la table arp recente qui est composée par la passerelle et l'adresse mac  
+
+Question 13
+
+DHCP Dynamic Host Configuration Protocol
+
+Question 14
+
+Internet Protocol is 192.168.100.75 (192.168.100.75)
+
+Question 15
+
+2	4.055825482	0.0.0.0	255.255.255.255	DHCP	342	DHCP Discover - Transaction ID 0xd9c25d60
+
+3	4.061503941	192.168.102.250	192.168.102.19	DHCP	353	DHCP Offer    - Transaction ID 0xd9c25d60
+
+4	4.061730194	0.0.0.0	255.255.255.255	DHCP	342	DHCP Request  - Transaction ID 0xd9c25d60
+
+5	4.066716686	192.168.102.250	192.168.102.19	DHCP	353	DHCP ACK      - Transaction ID 0xd9c25d60
+
+Question 16
+
+DNS Domain Name Server
+
+Question 17
+C'est 192.168.100.75
+
+Question 18
+
+le nom c'est ucaweb03.uca.fr
+
+Question 19
+
+Type: CNAME (Canonical name for an alias)
+
+Type: A (Host address)
+
+Question 20
+
+c'est le port 443
+
+Question 21
+
+Content Type: Application Data (23)
+Version: TLS 1.2 (0x0303)
+
+Question 22
+
+Secure Sockets Layer et Transport Layer Security
+
+Question 23
+
+TLS  permet de chiffrer les flux de données sur Internet afin que ces données ne puissent être lues que par les destinataires autorisés.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
